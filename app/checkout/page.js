@@ -67,16 +67,16 @@ export default function CheckoutPage() {
     return (
         <div className="min-h-screen bg-[#0a0a0a]">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-16 overflow-hidden">
+            <section className="relative pt-28 pb-12 overflow-hidden">
                 {/* Blue glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 via-transparent to-blue-900/20" />
 
-                <div className="relative z-10 text-center px-6">
+                <div className="relative z-10 text-center px-6 mt-8">
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="script-text text-[#c5a059] text-2xl md:text-3xl mb-2"
+                        className="script-text text-[#c5a059] text-xl md:text-2xl mb-3"
                     >
                         Elegant Dining at Home
                     </motion.p>
@@ -84,7 +84,7 @@ export default function CheckoutPage() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.1 }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-wider"
+                        className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-wider"
                     >
                         CHECKOUT
                     </motion.h1>
@@ -108,7 +108,7 @@ export default function CheckoutPage() {
                             transition={{ duration: 0.6 }}
                             className="lg:col-span-3"
                         >
-                            <form onSubmit={handleSubmit} className="space-y-8">
+                            <form onSubmit={handleSubmit} className="space-y-6">
                                 {/* Delivery Details */}
                                 <div className="card p-6 md:p-8">
                                     <div className="flex items-center gap-3 mb-6">
@@ -176,36 +176,87 @@ export default function CheckoutPage() {
                                     </div>
                                 </div>
 
-                                {/* Payment Method */}
+                                {/* Payment Method - Redesigned */}
                                 <div className="card p-6 md:p-8">
                                     <div className="flex items-center gap-3 mb-6">
                                         <span className="w-8 h-8 rounded-full bg-[#c5a059] text-[#0a0a0a] flex items-center justify-center font-bold text-sm">2</span>
                                         <h2 className="text-xl font-semibold text-white">PAYMENT METHOD</h2>
                                     </div>
 
-                                    <div className="space-y-3">
+                                    <div className="grid gap-3">
                                         {[
-                                            { value: 'cash', label: 'Barzahlung bei Lieferung' },
-                                            { value: 'card', label: 'Kartenzahlung bei Lieferung' },
-                                            { value: 'paypal', label: 'PayPal' },
+                                            {
+                                                value: 'cash',
+                                                label: 'Barzahlung',
+                                                sublabel: 'Bei Lieferung',
+                                                icon: (
+                                                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                                                    </svg>
+                                                )
+                                            },
+                                            {
+                                                value: 'card',
+                                                label: 'Kartenzahlung',
+                                                sublabel: 'Bei Lieferung',
+                                                icon: (
+                                                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                                                    </svg>
+                                                )
+                                            },
+                                            {
+                                                value: 'paypal',
+                                                label: 'PayPal',
+                                                sublabel: 'Online bezahlen',
+                                                icon: (
+                                                    <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                                        <path d="M7.076 21.337H2.47a.641.641 0 01-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19a.768.768 0 00-.758.648l-.885 5.61a.63.63 0 01-.622.54h-.003l-.892 1.208z" />
+                                                    </svg>
+                                                )
+                                            },
                                         ].map((method) => (
-                                            <label
+                                            <motion.label
                                                 key={method.value}
-                                                className={`flex items-center gap-4 p-4 rounded-lg border cursor-pointer transition-all ${formData.paymentMethod === method.value
-                                                        ? 'border-[#c5a059] bg-[#c5a059]/5'
-                                                        : 'border-[#2a2a2a] hover:border-[#c5a059]/50'
+                                                whileHover={{ scale: 1.01 }}
+                                                whileTap={{ scale: 0.99 }}
+                                                className={`flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all duration-200 ${formData.paymentMethod === method.value
+                                                        ? 'border-[#c5a059] bg-[#c5a059]/10'
+                                                        : 'border-[#2a2a2a] hover:border-[#3a3a3a] bg-[#141414]'
                                                     }`}
                                             >
+                                                <div className={`w-12 h-12 rounded-lg flex items-center justify-center transition-colors ${formData.paymentMethod === method.value
+                                                        ? 'bg-[#c5a059] text-[#0a0a0a]'
+                                                        : 'bg-[#2a2a2a] text-white/60'
+                                                    }`}>
+                                                    {method.icon}
+                                                </div>
+                                                <div className="flex-1">
+                                                    <span className={`block font-medium ${formData.paymentMethod === method.value ? 'text-white' : 'text-white/80'
+                                                        }`}>
+                                                        {method.label}
+                                                    </span>
+                                                    <span className="text-sm text-white/40">{method.sublabel}</span>
+                                                </div>
+                                                <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all ${formData.paymentMethod === method.value
+                                                        ? 'border-[#c5a059] bg-[#c5a059]'
+                                                        : 'border-[#3a3a3a]'
+                                                    }`}>
+                                                    {formData.paymentMethod === method.value && (
+                                                        <svg className="w-3 h-3 text-[#0a0a0a]" fill="currentColor" viewBox="0 0 20 20">
+                                                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                                        </svg>
+                                                    )}
+                                                </div>
                                                 <input
                                                     type="radio"
                                                     name="paymentMethod"
                                                     value={method.value}
                                                     checked={formData.paymentMethod === method.value}
                                                     onChange={handleInputChange}
-                                                    className="w-4 h-4 accent-[#c5a059]"
+                                                    className="sr-only"
                                                 />
-                                                <span className="text-white">{method.label}</span>
-                                            </label>
+                                            </motion.label>
                                         ))}
                                     </div>
                                 </div>
