@@ -17,12 +17,11 @@ export default function MenuSection({ title, items, index }) {
             className="mb-16"
         >
             {/* Section Title */}
-            <div className="flex items-center gap-4 mb-8">
-                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#c5a059]/30 to-transparent" />
-                <h3 className="text-xl md:text-2xl font-semibold text-white tracking-wider">
+            <div className="text-center mb-8">
+                <h3 className="text-xl md:text-2xl font-semibold text-white tracking-wider inline-block">
                     {title}
                 </h3>
-                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#c5a059]/30 to-transparent" />
+                <div className="gold-border max-w-[200px] mx-auto mt-3" />
             </div>
 
             {/* Menu Items */}

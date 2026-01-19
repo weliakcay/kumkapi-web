@@ -17,11 +17,11 @@ export default function MenuItem({ item, index }) {
 
     return (
         <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            transition={{ duration: 0.4, delay: index * 0.05 }}
             viewport={{ once: true }}
-            className="menu-item group flex justify-between items-start gap-4 p-4 rounded-lg border border-transparent hover:border-[#2a2a2a] transition-all duration-300"
+            className="menu-item group flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 p-4 rounded-lg border border-transparent hover:border-[#2a2a2a] hover:bg-[#141414]/50 transition-all duration-300"
         >
             <div className="flex-1">
                 <div className="flex items-baseline gap-2 mb-1">
