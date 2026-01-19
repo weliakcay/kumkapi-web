@@ -43,7 +43,8 @@ export default function Footer() {
                                 alt="Kumkapı Fisch Restaurant"
                                 width={180}
                                 height={80}
-                                className="object-contain"
+                                className="object-contain bg-transparent"
+                                style={{ background: 'transparent' }}
                             />
                         </Link>
                         <p className="text-white/60 text-sm leading-relaxed">
@@ -52,7 +53,7 @@ export default function Footer() {
                         {/* Social Links */}
                         <div className="flex gap-4">
                             <a
-                                href="https://instagram.com"
+                                href="https://www.instagram.com/kumkapihamburgrestaurant/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 rounded-full border border-[#2a2a2a] flex items-center justify-center text-white/60 hover:border-[#c5a059] hover:text-[#c5a059] transition-all"
