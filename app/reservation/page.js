@@ -301,8 +301,8 @@ export default function ReservationPage() {
                         className="text-center mt-12"
                     >
                         <p className="text-white/60 mb-2">Oder rufen Sie uns direkt an:</p>
-                        <a href="tel:+494012345678" className="text-[#c5a059] text-2xl font-semibold hover:text-[#d4af6a] transition-colors">
-                            +49 40 123 456 78
+                        <a href="tel:+494018034218" className="text-[#c5a059] text-2xl font-semibold hover:text-[#d4af6a] transition-colors">
+                            +49 40 18034218
                         </a>
                     </motion.div>
                 </div>

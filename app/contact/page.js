@@ -39,7 +39,7 @@ export default function ContactPage() {
                 </svg>
             ),
             title: 'Adresse',
-            lines: ['Hafenstraße 123', '20457 Hamburg'],
+            lines: ['Luruper Hauptstraße 103', '22547 Hamburg'],
         },
         {
             icon: (
@@ -48,8 +48,8 @@ export default function ContactPage() {
                 </svg>
             ),
             title: 'Telefon',
-            lines: ['+49 40 123 456 78'],
-            link: 'tel:+494012345678',
+            lines: ['+49 40 18034218'],
+            link: 'tel:+494018034218',
         },
         {
             icon: (
@@ -171,7 +171,7 @@ export default function ContactPage() {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                         </svg>
-                                        <p className="text-white/60">Hafenstraße 123, Hamburg</p>
+                                        <p className="text-white/60">Luruper Hauptstraße 103, 22547 Hamburg</p>
                                         <a
                                             href="https://maps.google.com"
                                             target="_blank"

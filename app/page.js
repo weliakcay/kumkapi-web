@@ -319,8 +319,8 @@ export default function HomePage() {
               </div>
               <h4 className="text-white font-semibold mb-2">Adresse</h4>
               <p className="text-white/60 text-sm">
-                Hafenstraße 123<br />
-                20457 Hamburg
+                Luruper Hauptstraße 103<br />
+                22547 Hamburg
               </p>
             </motion.div>
 
@@ -351,7 +351,7 @@ export default function HomePage() {
               </div>
               <h4 className="text-white font-semibold mb-2">Kontakt</h4>
               <p className="text-white/60 text-sm">
-                +49 40 123 456 78<br />
+                +49 40 18034218<br />
                 info@kumkapi.de
               </p>
             </motion.div>
