@@ -96,7 +96,7 @@ export default function HomePage() {
             className="flex flex-col w-full max-w-xs sm:max-w-none sm:flex-row gap-4 justify-center"
           >
             <Link href="/menu" className="btn-outline w-full sm:w-auto">
-              SPEISEKARTE
+              ONLINE BESTELLEN
             </Link>
             <Link href="/reservation" className="btn-primary w-full sm:w-auto">
               JETZT BUCHEN
