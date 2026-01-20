@@ -42,7 +42,7 @@ export default function MenuItem({ item, index }) {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={handleAddToCart}
-                    className="w-10 h-10 rounded-full bg-[#c5a059]/10 text-[#c5a059] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-[#c5a059] hover:text-[#0a0a0a]"
+                    className="w-10 h-10 rounded-full bg-[#c5a059] text-[#0a0a0a] flex items-center justify-center md:opacity-0 md:bg-[#c5a059]/10 md:text-[#c5a059] md:group-hover:opacity-100 md:group-hover:bg-[#c5a059] md:group-hover:text-[#0a0a0a] transition-all duration-300"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
