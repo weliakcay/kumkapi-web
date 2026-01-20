@@ -45,10 +45,10 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3">
                         <Image
-                            src="/images/logo-icon.png"
+                            src="/images/logo-header.png"
                             alt="Kumkapı"
-                            width={50}
-                            height={50}
+                            width={160}
+                            height={60}
                             className="object-contain"
                         />
                     </Link>
