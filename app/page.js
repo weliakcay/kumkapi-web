@@ -36,11 +36,11 @@ export default function HomePage() {
   return (
     <div className="overflow-hidden w-full">
       {/* Hero Section */}
-      <section ref={heroRef} className="relative h-screen overflow-hidden">
+      <section ref={heroRef} className="relative min-h-[110vh] md:min-h-screen md:h-screen overflow-hidden">
         {/* Background Image with Parallax */}
         <motion.div
           style={{ y: heroY }}
-          className="absolute inset-0 z-0"
+          className="absolute inset-0 z-0 h-[120%]" // Increased height for parallax saftey
         >
           <Image
             src="/images/restaurant-interior-1.jpg"
@@ -60,13 +60,13 @@ export default function HomePage() {
         {/* Hero Content */}
         <motion.div
           style={{ opacity: heroOpacity }}
-          className="relative z-20 h-full flex flex-col items-center justify-start pt-40 md:justify-center md:pt-0 text-center px-6"
+          className="relative z-20 h-full flex flex-col items-center justify-start pt-32 md:justify-center md:pt-0 text-center px-4 md:px-6"
         >
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="script-text text-[#c5a059] text-3xl md:text-4xl mb-4"
+            className="script-text text-[#c5a059] text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-4"
           >
             Tradition trifft Moderne
           </motion.p>
@@ -75,7 +75,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 max-w-4xl leading-tight"
+            className="text-3xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6 max-w-4xl leading-tight"
           >
             Das Feinste Seafood Erlebnis in Hamburg
           </motion.h1>
@@ -84,7 +84,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="text-white/70 text-lg md:text-xl max-w-2xl mb-10"
+            className="text-white/70 text-base md:text-xl max-w-2xl mb-8 md:mb-10 px-2"
           >
             Genießen Sie frischen Fisch und authentische mediterrane Küche in einem eleganten Ambiente direkt am Hamburger Hafen.
           </motion.p>
@@ -93,12 +93,12 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col w-full max-w-xs sm:max-w-none sm:flex-row gap-4 justify-center"
           >
-            <Link href="/menu" className="btn-outline">
+            <Link href="/menu" className="btn-outline w-full sm:w-auto">
               SPEISEKARTE
             </Link>
-            <Link href="/reservation" className="btn-primary">
+            <Link href="/reservation" className="btn-primary w-full sm:w-auto">
               JETZT BUCHEN
             </Link>
           </motion.div>
@@ -108,7 +108,7 @@ export default function HomePage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5 }}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2"
+            className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2"
           >
             <motion.div
               animate={{ y: [0, 10, 0] }}
