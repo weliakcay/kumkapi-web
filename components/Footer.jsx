@@ -41,8 +41,8 @@ export default function Footer() {
                             <Image
                                 src="/images/logo-footer.png"
                                 alt="Kumkapı Fisch Restaurant"
-                                width={180}
-                                height={180}
+                                width={240}
+                                height={240}
                                 className="object-contain bg-transparent"
                                 style={{ background: 'transparent' }}
                             />
