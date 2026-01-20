@@ -60,7 +60,7 @@ export default function HomePage() {
         {/* Hero Content */}
         <motion.div
           style={{ opacity: heroOpacity }}
-          className="relative z-20 h-full flex flex-col items-center justify-center text-center px-6"
+          className="relative z-20 h-full flex flex-col items-center justify-start pt-40 md:justify-center md:pt-0 text-center px-6"
         >
           <motion.p
             initial={{ opacity: 0, y: 30 }}
