@@ -242,8 +242,7 @@ export default function HomePage() {
                 className="relative rounded-lg overflow-hidden shadow-2xl"
               >
                 <Image
-                  src="/images/menu-decor-1.png"
-                  alt="Seafood Platter"
+                  src="/images/seafood-platter.jpg"
                   width={600}
                   height={500}
                   className="w-full object-cover"
@@ -257,8 +256,7 @@ export default function HomePage() {
                 className="relative rounded-lg overflow-hidden shadow-2xl"
               >
                 <Image
-                  src="/images/menu-decor-2.png"
-                  alt="Grilled Fish"
+                  src="/images/grilled-fish-main.jpg"
                   width={600}
                   height={500}
                   className="w-full object-cover"

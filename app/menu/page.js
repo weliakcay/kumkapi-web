@@ -35,7 +35,7 @@ export default function MenuPage() {
                     className="absolute inset-0 z-0"
                 >
                     <Image
-                        src="/images/menu-decor-1.png"
+                        src="/images/seafood-platter.jpg"
                         alt="Seafood Platter"
                         fill
                         priority
@@ -140,7 +140,7 @@ export default function MenuPage() {
                             className="relative rounded-lg overflow-hidden shadow-2xl"
                         >
                             <Image
-                                src="/images/menu-decor-2.png"
+                                src="/images/grilled-fish-main.jpg"
                                 alt="Grilled Fish"
                                 width={500}
                                 height={400}
