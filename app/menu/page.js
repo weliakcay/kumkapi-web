@@ -35,7 +35,7 @@ export default function MenuPage() {
                     className="absolute inset-0 z-0"
                 >
                     <Image
-                        src="/images/seafood-platter.jpg"
+                        src="/images/menu-hero-new.jpg"
                         alt="Seafood Platter"
                         fill
                         priority
