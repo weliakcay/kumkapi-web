@@ -26,9 +26,11 @@ export default function RootLayout({ children }) {
       </head>
       <body className="antialiased">
         <CartProvider>
-          <Navbar />
-          <main className="min-h-screen w-full">{children}</main>
-          <Footer />
+          <div className="flex flex-col min-h-screen w-full items-center">
+            <Navbar />
+            <main className="flex-1 w-full">{children}</main>
+            <Footer />
+          </div>
         </CartProvider>
       </body>
     </html>
