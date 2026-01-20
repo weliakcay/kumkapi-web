@@ -39,10 +39,10 @@ export default function Footer() {
                     >
                         <Link href="/" className="inline-block">
                             <Image
-                                src="/images/logo.png"
+                                src="/images/logo-footer.png"
                                 alt="Kumkapı Fisch Restaurant"
                                 width={180}
-                                height={80}
+                                height={180}
                                 className="object-contain bg-transparent"
                                 style={{ background: 'transparent' }}
                             />
