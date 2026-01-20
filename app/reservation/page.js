@@ -57,7 +57,7 @@ export default function ReservationPage() {
 
     if (isComplete) {
         return (
-            <div className="min-h-screen bg-[#0a0a0a] pt-32 pb-16">
+            <div className="min-h-screen bg-[#0a0a0a] pt-32 pb-16 w-full">
                 <div className="max-w-2xl mx-auto px-6 text-center">
                     <motion.div
                         initial={{ scale: 0 }}
@@ -121,7 +121,7 @@ export default function ReservationPage() {
     }
 
     return (
-        <div className="min-h-screen bg-[#0a0a0a]">
+        <div className="min-h-screen bg-[#0a0a0a] w-full">
             {/* Hero Section */}
             <section className="relative h-[40vh] min-h-[300px] overflow-hidden">
                 <Image
@@ -156,7 +156,7 @@ export default function ReservationPage() {
             </section>
 
             {/* Progress Steps */}
-            <section className="py-8 border-b border-[#2a2a2a]">
+            <section className="w-full py-8 border-b border-[#2a2a2a]">
                 <div className="max-w-3xl mx-auto px-6">
                     <div className="flex items-center justify-between">
                         {[
@@ -196,7 +196,7 @@ export default function ReservationPage() {
             </section>
 
             {/* Form Section */}
-            <section className="py-12 md:py-16">
+            <section className="w-full py-12 md:py-16">
                 <div className="max-w-3xl mx-auto px-6">
                     <form onSubmit={handleSubmit}>
                         <AnimatePresence mode="wait">

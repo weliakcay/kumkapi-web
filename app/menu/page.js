@@ -26,7 +26,7 @@ export default function MenuPage() {
     ];
 
     return (
-        <div className="min-h-screen bg-[#0a0a0a]">
+        <div className="min-h-screen bg-[#0a0a0a] w-full">
             {/* Hero Section */}
             <section ref={heroRef} className="relative h-[60vh] md:h-[70vh] overflow-hidden">
                 {/* Background Image */}

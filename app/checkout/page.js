@@ -36,7 +36,7 @@ export default function CheckoutPage() {
 
     if (orderComplete) {
         return (
-            <div className="min-h-screen bg-[#0a0a0a] pt-32 pb-16">
+            <div className="min-h-screen bg-[#0a0a0a] pt-32 pb-16 w-full">
                 <div className="max-w-2xl mx-auto px-6 text-center">
                     <motion.div
                         initial={{ scale: 0 }}
@@ -63,7 +63,7 @@ export default function CheckoutPage() {
     }
 
     return (
-        <div className="min-h-screen bg-[#0a0a0a]">
+        <div className="min-h-screen bg-[#0a0a0a] w-full">
             {/* Hero Section - Fixed spacing */}
             <section className="relative h-[35vh] min-h-[280px] overflow-hidden">
                 <Image

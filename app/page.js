@@ -34,7 +34,7 @@ export default function HomePage() {
   const heroOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden w-full">
       {/* Hero Section */}
       <section ref={heroRef} className="relative h-screen overflow-hidden">
         {/* Background Image with Parallax */}

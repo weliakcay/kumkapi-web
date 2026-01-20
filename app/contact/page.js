@@ -73,7 +73,7 @@ export default function ContactPage() {
     ];
 
     return (
-        <div className="min-h-screen bg-[#0a0a0a]">
+        <div className="min-h-screen bg-[#0a0a0a] w-full">
             {/* Hero Section */}
             <section className="relative h-[50vh] overflow-hidden">
                 <Image

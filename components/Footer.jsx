@@ -23,7 +23,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="bg-[#0a0a0a] border-t border-[#2a2a2a]">
+        <footer className="bg-[#0a0a0a] border-t border-[#2a2a2a] w-full">
             {/* Gold divider line */}
             <div className="gold-border" />
 
