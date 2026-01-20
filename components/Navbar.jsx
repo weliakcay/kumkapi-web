@@ -36,8 +36,8 @@ export default function Navbar() {
             animate={{ y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-                    ? 'bg-[#0a0a0a]/95 backdrop-blur-md shadow-lg'
-                    : 'bg-transparent'
+                ? 'bg-[#0a0a0a]/95 backdrop-blur-md shadow-lg'
+                : 'bg-transparent'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -60,8 +60,8 @@ export default function Navbar() {
                                 key={link.href}
                                 href={link.href}
                                 className={`text-sm tracking-wider font-medium transition-colors duration-300 relative group ${pathname === link.href
-                                        ? 'text-[#c5a059]'
-                                        : 'text-white/80 hover:text-[#c5a059]'
+                                    ? 'text-[#c5a059]'
+                                    : 'text-white/80 hover:text-[#c5a059]'
                                     }`}
                             >
                                 {link.label}
@@ -108,7 +108,7 @@ export default function Navbar() {
                         {/* CTA Button */}
                         <Link
                             href="/reservation"
-                            className="hidden md:block btn-primary text-xs"
+                            className="hidden lg:block btn-primary text-xs"
                         >
                             TISCH RESERVIEREN
                         </Link>
@@ -167,8 +167,8 @@ export default function Navbar() {
                                         href={link.href}
                                         onClick={() => setIsMobileMenuOpen(false)}
                                         className={`block text-lg tracking-wider font-medium py-2 ${pathname === link.href
-                                                ? 'text-[#c5a059]'
-                                                : 'text-white/80'
+                                            ? 'text-[#c5a059]'
+                                            : 'text-white/80'
                                             }`}
                                     >
                                         {link.label}
