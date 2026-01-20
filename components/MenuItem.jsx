@@ -21,20 +21,20 @@ export default function MenuItem({ item, index }) {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.05 }}
             viewport={{ once: true }}
-            className="menu-item group flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 p-4 rounded-lg border border-transparent hover:border-[#2a2a2a] hover:bg-[#141414]/50 transition-all duration-300"
+            className="menu-item group flex flex-col items-center text-center p-4 rounded-lg border border-transparent hover:border-[#2a2a2a] hover:bg-[#141414]/50 transition-all duration-300"
         >
-            <div className="flex-1">
-                <div className="flex items-baseline gap-2 mb-1">
+            <div className="w-full">
+                <div className="flex items-center justify-center gap-2 mb-1">
                     <span className="text-[#c5a059] text-sm font-mono">{item.id}</span>
                     <h4 className="text-white font-medium text-lg">{item.name}</h4>
                 </div>
                 {item.description && (
-                    <p className="text-white/50 text-sm leading-relaxed mt-1">
+                    <p className="text-white/50 text-sm leading-relaxed mt-1 max-w-md mx-auto">
                         {item.description}
                     </p>
                 )}
             </div>
-            <div className="flex items-center gap-4 flex-shrink-0">
+            <div className="flex items-center gap-4 mt-3">
                 <span className="text-[#c5a059] font-semibold text-lg">
                     €{item.price.toFixed(2)}
                 </span>

@@ -215,7 +215,7 @@ export default function ReservationPage() {
                                     </div>
 
                                     {/* Guest Count */}
-                                    <div className="bg-[#141414] rounded-2xl p-6 border border-[#2a2a2a]">
+                                    <div className="bg-[#141414] rounded-2xl p-6 border border-[#2a2a2a] text-center">
                                         <label className="block text-white/60 text-sm uppercase tracking-wider mb-4">
                                             Anzahl der Gäste
                                         </label>
@@ -242,7 +242,7 @@ export default function ReservationPage() {
                                     </div>
 
                                     {/* Date */}
-                                    <div className="bg-[#141414] rounded-2xl p-6 border border-[#2a2a2a]">
+                                    <div className="bg-[#141414] rounded-2xl p-6 border border-[#2a2a2a] text-center">
                                         <label className="block text-white/60 text-sm uppercase tracking-wider mb-4">
                                             Datum wählen
                                         </label>
@@ -252,25 +252,25 @@ export default function ReservationPage() {
                                             value={formData.date}
                                             onChange={handleInputChange}
                                             min={today}
-                                            className="w-full text-lg py-4"
+                                            className="w-full text-lg py-4 text-center"
                                             required
                                         />
                                     </div>
 
                                     {/* Time Slots */}
-                                    <div className="bg-[#141414] rounded-2xl p-6 border border-[#2a2a2a]">
+                                    <div className="bg-[#141414] rounded-2xl p-6 border border-[#2a2a2a] text-center">
                                         <label className="block text-white/60 text-sm uppercase tracking-wider mb-4">
                                             Uhrzeit wählen
                                         </label>
-                                        <div className="grid grid-cols-4 md:grid-cols-7 gap-2">
+                                        <div className="grid grid-cols-4 md:grid-cols-7 gap-2 justify-items-center">
                                             {timeSlots.map((time) => (
                                                 <button
                                                     key={time}
                                                     type="button"
                                                     onClick={() => setFormData(prev => ({ ...prev, time }))}
                                                     className={`py-3 px-2 rounded-lg text-sm font-medium transition-all ${formData.time === time
-                                                            ? 'bg-[#c5a059] text-[#0a0a0a]'
-                                                            : 'bg-[#2a2a2a] text-white/60 hover:bg-[#3a3a3a] hover:text-white'
+                                                        ? 'bg-[#c5a059] text-[#0a0a0a]'
+                                                        : 'bg-[#2a2a2a] text-white/60 hover:bg-[#3a3a3a] hover:text-white'
                                                         }`}
                                                 >
                                                     {time}
@@ -350,8 +350,8 @@ export default function ReservationPage() {
                                                         type="button"
                                                         onClick={() => setFormData(prev => ({ ...prev, occasion: occ.value }))}
                                                         className={`py-3 px-3 rounded-lg text-sm transition-all ${formData.occasion === occ.value
-                                                                ? 'bg-[#c5a059] text-[#0a0a0a] font-medium'
-                                                                : 'bg-[#2a2a2a] text-white/60 hover:bg-[#3a3a3a]'
+                                                            ? 'bg-[#c5a059] text-[#0a0a0a] font-medium'
+                                                            : 'bg-[#2a2a2a] text-white/60 hover:bg-[#3a3a3a]'
                                                             }`}
                                                     >
                                                         {occ.label}

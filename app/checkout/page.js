@@ -118,7 +118,7 @@ export default function CheckoutPage() {
                                 {/* Delivery Details Card */}
                                 <div className="bg-[#141414] rounded-2xl border border-[#2a2a2a] overflow-hidden">
                                     <div className="bg-[#1a1a1a] px-6 py-4 border-b border-[#2a2a2a]">
-                                        <div className="flex items-center gap-3">
+                                        <div className="flex items-center justify-center gap-3">
                                             <span className="w-8 h-8 rounded-full bg-[#c5a059] text-[#0a0a0a] flex items-center justify-center font-bold text-sm">1</span>
                                             <h2 className="text-lg font-semibold text-white">Lieferadresse</h2>
                                         </div>
@@ -191,7 +191,7 @@ export default function CheckoutPage() {
                                 {/* Payment Method Card */}
                                 <div className="bg-[#141414] rounded-2xl border border-[#2a2a2a] overflow-hidden">
                                     <div className="bg-[#1a1a1a] px-6 py-4 border-b border-[#2a2a2a]">
-                                        <div className="flex items-center gap-3">
+                                        <div className="flex items-center justify-center gap-3">
                                             <span className="w-8 h-8 rounded-full bg-[#c5a059] text-[#0a0a0a] flex items-center justify-center font-bold text-sm">2</span>
                                             <h2 className="text-lg font-semibold text-white">Zahlungsmethode</h2>
                                         </div>
@@ -223,8 +223,8 @@ export default function CheckoutPage() {
                                                     key={method.value}
                                                     whileTap={{ scale: 0.99 }}
                                                     className={`flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all ${formData.paymentMethod === method.value
-                                                            ? 'border-[#c5a059] bg-[#c5a059]/10'
-                                                            : 'border-[#2a2a2a] hover:border-[#3a3a3a] bg-[#0a0a0a]'
+                                                        ? 'border-[#c5a059] bg-[#c5a059]/10'
+                                                        : 'border-[#2a2a2a] hover:border-[#3a3a3a] bg-[#0a0a0a]'
                                                         }`}
                                                 >
                                                     <span className="text-2xl">{method.icon}</span>
@@ -236,8 +236,8 @@ export default function CheckoutPage() {
                                                         <span className="text-sm text-white/40">{method.sublabel}</span>
                                                     </div>
                                                     <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all ${formData.paymentMethod === method.value
-                                                            ? 'border-[#c5a059] bg-[#c5a059]'
-                                                            : 'border-[#3a3a3a]'
+                                                        ? 'border-[#c5a059] bg-[#c5a059]'
+                                                        : 'border-[#3a3a3a]'
                                                         }`}>
                                                         {formData.paymentMethod === method.value && (
                                                             <svg className="w-3 h-3 text-[#0a0a0a]" fill="currentColor" viewBox="0 0 20 20">
@@ -262,7 +262,7 @@ export default function CheckoutPage() {
                                 {/* Notes Card */}
                                 <div className="bg-[#141414] rounded-2xl border border-[#2a2a2a] overflow-hidden">
                                     <div className="bg-[#1a1a1a] px-6 py-4 border-b border-[#2a2a2a]">
-                                        <div className="flex items-center gap-3">
+                                        <div className="flex items-center justify-center gap-3">
                                             <span className="w-8 h-8 rounded-full bg-[#c5a059] text-[#0a0a0a] flex items-center justify-center font-bold text-sm">3</span>
                                             <h2 className="text-lg font-semibold text-white">Anmerkungen</h2>
                                             <span className="text-white/40 text-sm">(Optional)</span>
